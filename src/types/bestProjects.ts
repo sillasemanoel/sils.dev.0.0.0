@@ -1,10 +1,14 @@
+import silsaas from "../../public/images/projects/silsaas.png";
+import supportwise from "../../public/images/projects/supportwise.png";
+import taskify from "../../public/images/projects/taskify.png";
+
 export type BestProject = {
   title: string;
   description: string;
   codeLink: string;
   liveDemoLink: string;
   technologies: string[];
-  image: string; // Adiciona a propriedade para a imagem
+  image: string;
 };
 
 export const bestProjects: BestProject[] = [
@@ -22,7 +26,7 @@ export const bestProjects: BestProject[] = [
       "Prisma",
       "Stripe",
     ],
-    image: "../public/images/projects/silsaas.png",
+    image: silsaas,
   },
   {
     title: "Supportwise ⚡",
@@ -31,7 +35,7 @@ export const bestProjects: BestProject[] = [
     codeLink: "https://github.com/sillasemanoel/supportwise",
     liveDemoLink: "https://supportwise.vercel.app/",
     technologies: ["TypeScript", "React", "styled-components", "localStorage"],
-    image: "../public/images/projects/supportwise.png",
+    image: supportwise,
   },
   {
     title: "Taskify 📝",
@@ -40,6 +44,6 @@ export const bestProjects: BestProject[] = [
     codeLink: "https://github.com/sillasemanoel/taskify",
     liveDemoLink: "https://taskify-psi.vercel.app/",
     technologies: ["TypeScript", "React", "styled-components", "localStorage"],
-    image: "../public/images/projects/taskify.png",
+    image: taskify,
   },
 ];
