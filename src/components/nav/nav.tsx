@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { NavStyle, MobileNavStyle } from "./style";
+import icon from "../../../public/images/favicon.ico";
 
 type GreetProps = {
   home: string;
@@ -15,7 +16,8 @@ export default function Nav(props: GreetProps) {
   return (
     <>
       <NavStyle>
-        <a href="#home">
+        <a className="soon" href="#home">
+          <img src={icon} alt="mago"></img>
           <h3>sils.dev</h3>
         </a>
         <ul>

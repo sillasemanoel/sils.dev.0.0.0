@@ -1,6 +1,6 @@
 import { AboutStyle } from "./style";
 import work from "../../../../public/images/photographys/work.png";
-import emojiWork from "../../../../public/images/emojis/emojiWork.png";
+import emojiWork from "../../../../public/images/favicon.ico";
 import developer from "../../../../public/images/about/developer.png";
 
 type GreetProps = {

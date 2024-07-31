@@ -12,6 +12,16 @@ export const NavStyle = styled.nav`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   z-index: 100;
 
+  .soon {
+    display: flex;
+    gap: 5px;
+  }
+
+  .soon img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
   h3 {
     font-size: 20px;
     color: #2d2e32;

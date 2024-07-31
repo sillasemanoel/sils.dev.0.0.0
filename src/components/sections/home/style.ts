@@ -96,8 +96,9 @@ export const HomeStyle = styled.section`
       position: relative;
       width: 45px;
       height: 45px;
-      top: -67px !important;
+      top: -21px !important;
       left: 138px;
+      margin-top: -45px;
     }
 
     .pt_hand {
@@ -136,7 +137,7 @@ export const HomeStyle = styled.section`
     display: flex;
     align-items: center;
     color: #2d2e32;
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .main div span a:hover {
@@ -148,7 +149,6 @@ export const HomeStyle = styled.section`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid black;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     position: relative;
     transition: all 1s ease-in-out;
@@ -186,13 +186,12 @@ export const HomeStyle = styled.section`
   }
 
   .skills {
-    margin-top: 40px !important;
+    margin-top: 20px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #767676;
-    margin-top: 80px;
     text-align: center;
   }
 

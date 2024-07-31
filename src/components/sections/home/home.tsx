@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitterX, BsInstagram } from "react-icons/bs";
 import { HomeStyle } from "./style";
 import hand from "../../../../public/images/emojis/emojiHi.png";
 
@@ -24,7 +24,7 @@ export default function Home(props: GreetProps) {
                 title="Linkedin"
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.linkedin.com/in/sillas-emanoel-656478218/"
+                href="https://www.linkedin.com/in/sillas-emanoel-656478218"
               >
                 <BsLinkedin />
               </a>
@@ -35,6 +35,22 @@ export default function Home(props: GreetProps) {
                 href="https://github.com/sillasemanoel"
               >
                 <BsGithub />
+              </a>
+              <a
+                title="X"
+                rel="noreferrer"
+                target="_blank"
+                href="https://x.com/silsdev"
+              >
+                <BsTwitterX />
+              </a>
+              <a
+                title="Instagram"
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.instagram.com/silsdev"
+              >
+                <BsInstagram />
               </a>
             </span>
           </div>
