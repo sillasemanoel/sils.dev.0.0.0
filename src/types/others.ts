@@ -1,4 +1,5 @@
 import devlinks from "../../public/images/projects/devlinks.png";
+import travelgram from "../../public/images/projects/travelgram.png";
 import touristSpot from "../../public/images/projects/local-turistico.png";
 import recipePage from "../../public/images/projects/pagina-de-receita.png";
 
@@ -19,6 +20,14 @@ export const otherProjects: OtherProject[] = [
     liveDemoLink: "#",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     image: devlinks,
+  },
+  {
+    title: "travelgram 🎞️",
+    description: "Travelgram app, made in Rocketseat Full-Stack formation.",
+    codeLink: "https://github.com/sillasemanoel/travelgram",
+    liveDemoLink: "#",
+    technologies: ["HTML5", "CSS3"],
+    image: travelgram,
   },
   {
     title: "tourist spot ✈️",
