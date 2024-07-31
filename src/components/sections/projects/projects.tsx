@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { ProjectStyle } from "./style";
-import { myCompaniesProjects } from "../../../types/myCompanies";
+import { practicalTestsProjects } from "../../../types/practicalTests";
 import { bestProjects } from "../../../types/bestProjects";
 import { otherProjects } from "../../../types/others";
 import CategoryFilter from "../../@minorComponents/filter/filter";
 import ProjectsOnTheGrid from "../../@minorComponents/grid/grid";
 import LoadMoreButton from "../../@minorComponents/load-more/load-more";
 
-type Category = "all" | "myCompanies" | "bestProjects" | "others";
+type Category = "all" | "bestProjects" | "practicalTests" | "others";
 
 type Project = {
   title: string;
@@ -19,9 +19,9 @@ type Project = {
 };
 
 const categoryContent: Record<Category, Project[]> = {
-  all: [...myCompaniesProjects, ...bestProjects, ...otherProjects],
-  myCompanies: myCompaniesProjects,
+  all: [...bestProjects, ...practicalTestsProjects, ...otherProjects],
   bestProjects: bestProjects,
+  practicalTests: practicalTestsProjects,
   others: otherProjects,
 };
 

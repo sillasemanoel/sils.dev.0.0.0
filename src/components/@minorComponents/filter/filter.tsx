@@ -1,6 +1,6 @@
 import { CategoryFilterStyle } from "./style";
 
-type Category = "all" | "myCompanies" | "bestProjects" | "others";
+type Category = "all" | "bestProjects" | "practicalTests" | "others";
 
 type CategoryFilterProps = {
   selectedCategory: Category;
@@ -24,6 +24,12 @@ export default function CategoryFilter({
         onClick={() => onCategoryChange("bestProjects")}
       >
         Best Projects
+      </p>
+      <p
+        className={selectedCategory === "practicalTests" ? "active" : ""}
+        onClick={() => onCategoryChange("practicalTests")}
+      >
+        Practical tests
       </p>
       <p
         className={selectedCategory === "others" ? "active" : ""}
