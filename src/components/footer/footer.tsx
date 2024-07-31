@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { FooterStyle } from "./style";
 
 type GreetProps = {
