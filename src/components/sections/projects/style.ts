@@ -40,7 +40,27 @@ export const ProjectStyle = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     width: 100%;
+  }
+
+  .load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .load-more button {
+    border: 0;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .load-more button:hover {
+    color: #615cfb;
   }
 `;

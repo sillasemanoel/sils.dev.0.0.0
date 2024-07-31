@@ -5,6 +5,7 @@ import { bestProjects } from "../../../types/bestProjects";
 import { otherProjects } from "../../../types/others";
 import CategoryFilter from "../../@minorComponents/filter/filter";
 import ProjectsOnTheGrid from "../../@minorComponents/grid/grid";
+import LoadMoreButton from "../../@minorComponents/load-more/load-more";
 
 type Category = "all" | "myCompanies" | "bestProjects" | "others";
 
@@ -26,10 +27,24 @@ const categoryContent: Record<Category, Project[]> = {
 
 export default function Project(props: { title: string; description: string }) {
   const [selectedCategory, setSelectedCategory] = useState<Category>("all");
+  const [visibleProjects, setVisibleProjects] = useState<number>(3);
 
   const handleCategoryChange = (category: Category) => {
     setSelectedCategory(category);
+    setVisibleProjects(3);
   };
+
+  const handleLoadMore = () => {
+    setVisibleProjects((prev) => prev + 3);
+  };
+
+  const projectsToDisplay = categoryContent[selectedCategory].slice(
+    0,
+    visibleProjects
+  );
+
+  const hasMoreProjects =
+    categoryContent[selectedCategory].length > visibleProjects;
 
   return (
     <ProjectStyle id="projects">
@@ -43,7 +58,7 @@ export default function Project(props: { title: string; description: string }) {
           onCategoryChange={handleCategoryChange}
         />
         <div className="grid">
-          {categoryContent[selectedCategory].map((project, index) => (
+          {projectsToDisplay.map((project, index) => (
             <ProjectsOnTheGrid
               key={index}
               photo={project.image}
@@ -55,6 +70,7 @@ export default function Project(props: { title: string; description: string }) {
             />
           ))}
         </div>
+        <LoadMoreButton onLoadMore={handleLoadMore} hasMore={hasMoreProjects} />
       </div>
     </ProjectStyle>
   );
