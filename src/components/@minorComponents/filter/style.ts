@@ -4,7 +4,7 @@ export const CategoryFilterStyle = styled.section`
   margin-bottom: 20px;
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   p {
     font-size: 17px;
