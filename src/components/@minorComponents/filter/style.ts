@@ -7,7 +7,7 @@ export const CategoryFilterStyle = styled.section`
   margin-bottom: 1rem;
 
   p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     color: #333;
     cursor: pointer;
